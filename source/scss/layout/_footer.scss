@@ -1,0 +1,23 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+#site-footer {
+    margin-top: 32px;
+    background: #EAEAEA;
+    padding: 8px 0;
+    @include clearfix;
+}
+
+.footer {
+    &__info {
+        p {
+            color: #333;
+            font-size: 13px;
+            line-height: 1.6em;
+            &+p {
+                margin-top: 4px;
+            }
+        }
+    }
+}

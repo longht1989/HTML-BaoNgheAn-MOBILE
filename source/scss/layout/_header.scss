@@ -1,0 +1,130 @@
+/* ====================================   Header's style   ==================================== */
+
+.site-header {
+    margin-bottom: 16px;
+    &__content {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        @include clearfix;
+    }
+    .logo {
+        width: 165px;
+        float: left;
+    }
+    &__tool {
+        float: right;
+        margin-top: 4px;
+    }
+    &__search,
+    &__menu {
+        border-radius: 2px;
+        background: #D9D8D8;
+        float: left;
+        margin-left: 8px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        transition: all 0.2s linear;
+        &:hover {
+            background: #d0d0d0;
+        }
+        .sprite-close {
+            display: none;
+        }
+        &.is-active {
+            .sprites {
+                display: none;
+            }
+            .sprite-close {
+                display: inline-block;
+            }
+        }
+    }
+    &__extend {
+        padding: 0 8px;
+        background: #F7F7F7;
+        font-family: $font-family-special;
+        font-size: 14px;
+        line-height: 3.5rem;
+        max-height: 35px;
+        overflow: hidden;
+        li {
+            display: inline-block;
+            &+li {
+                margin-left: 8px;
+            }
+            a {
+                color: $brand-primary;
+                &:hover {
+                    color: $brand-success;
+                }
+            }
+        }
+    }
+}
+
+.mobile {
+    &__menu {
+        display: none;
+        background: #fff;
+        margin: -16px 0 16px;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    &__search {
+        display: none;
+        background: #fff;
+        margin: -16px 0 16px;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        .search {
+            &-wrap {
+                position: relative;
+            }
+            &-btn {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                background: #E9E9E9;
+                z-index: 2;
+                cursor: pointer;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+            }
+        }
+        .form-control {
+            border-radius: 2px;
+        }
+    }
+    &__cate-listing {
+        li {
+            font-family: $font-family-special, arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            &+li {
+                margin-top: 12px;
+            }
+            a {
+                display: block;
+                color: $brand-primary;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: $brand-success;
+                }
+                &::before {
+                    content: '•';
+                    display: inline-block;
+                    margin-right: 10px;
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+}

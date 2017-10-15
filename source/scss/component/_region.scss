@@ -1,0 +1,148 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+
+/* zone global style */
+
+.zone {
+    margin-bottom: 24px;
+    &__header {
+        @include clearfix;
+        margin-bottom: 12px;
+        font-family: $font-family-special;
+        font-size: 0;
+        .form-control {
+            width: 140px;
+            float: right;
+            height: 30px;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 1em;
+        position: relative;
+        color: $brand-primary;
+        text-transform: uppercase;
+        float: left;
+        &:hover {
+            color: $brand-success;
+            &::after {
+                background: $brand-success;
+            }
+        }
+        a {
+            color: $brand-primary;
+            &:hover {
+                color: $brand-success;
+            }
+        }
+        .zone--featured & {
+            color: white;
+            &::after {
+                background: white;
+            }
+            &:hover {
+                color: $brand-primary;
+                &:after {
+                    background: $brand-primary;
+                }
+            }
+        }
+    }
+    &__sub-title {
+        font-size: 12px;
+        line-height: 25px;
+        &+.zone__sub-title {
+            &::before {
+                content: '/';
+                padding-right: 8px;
+                margin-left: 8px;
+            }
+            &:hover {
+                &::before {
+                    color: #000;
+                }
+            }
+        }
+        .zone--featured & {
+            color: white;
+            &:hover {
+                color: $brand-primary;
+                &::before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__content {
+        @include clearfix();
+        select.form-control {
+            margin-bottom: 12px;
+        }
+    }
+    &--grey {
+        background: #F0F0F0;
+        padding: 8px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    &--featured {
+        background: #888;
+        padding: 8px;
+        .zone__header {
+            margin-bottom: 8px;
+        }
+        .zone__title {
+            a {
+                color: white;
+                &:hover {
+                    color: #ddd;
+                }
+            }
+        }
+    }
+    .sidebar-col &,
+    &--aside {
+        .zone__title {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+    &--media {
+        position: relative;
+        .bx-pager {
+            position: absolute;
+            top: 21px;
+            right: 8px;
+            &-item {
+                float: left;
+                &+.bx-pager-item {
+                    margin-left: 8px;
+                }
+                a {
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    text-indent: -999em;
+                    background: #444;
+                    &.active {
+                        background: white;
+                    }
+                }
+            }
+        }
+        .story {
+            &+.story {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// ads
+.qc {
+    @include clearfix();
+    margin-bottom: 24px;
+    text-align: center;
+}

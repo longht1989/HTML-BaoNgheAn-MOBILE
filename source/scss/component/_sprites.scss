@@ -1,0 +1,144 @@
+/* sprites style */
+
+.sprites {
+    display: inline-block;
+    background: url(../img/sprites.svg) no-repeat;
+    cursor: pointer;
+}
+
+.sprite {
+    &-search {
+        width: 13px;
+        height: 14px;
+        background-position: 0px -72px;
+        &:hover {
+            background-position-y: -96px;
+        }
+    }
+    &-home {
+        width: 13px;
+        height: 14px;
+        background-position: 0 0;
+        &:hover {
+            background-position-x: -23px;
+        }
+    }
+    &-spinner {
+        width: 18px;
+        height: 18px;
+        background-position: 0px -119px;
+    }
+    &-double-angle {
+        width: 9px;
+        height: 14px;
+        background-position: 0px -148px;
+        cursor: default;
+    }
+    &-facebook {
+        width: 24px;
+        height: 24px;
+        background-position: 0px -172px;
+        &:hover {
+            background-position-y: -206px;
+        }
+    }
+    &-google-plus {
+        width: 24px;
+        height: 24px;
+        background-position: -32px -172px;
+        &:hover {
+            background-position-y: -206px;
+        }
+    }
+    &-twitter {
+        width: 24px;
+        height: 24px;
+        background-position: -64px -172px;
+        &:hover {
+            background-position-y: -206px;
+        }
+    }
+    &-zalo {
+        width: 24px;
+        height: 24px;
+        background-position: -96px -172px;
+        &:hover {
+            background-position-y: -206px;
+        }
+    }
+    &-envelope {
+        width: 24px;
+        height: 24px;
+        background-position: -128px -172px;
+        &:hover {
+            background-position-y: -206px;
+        }
+    }
+    &-question {
+        width: 32px;
+        height: 32px;
+        background-position: -0px -240px;
+    }
+    &-answer {
+        width: 32px;
+        height: 32px;
+        background-position: -0px -282px;
+    }
+    &-m-search {
+        width: 11px;
+        height: 12px;
+        background-position: 0px -421px;
+    }
+    &-menu {
+        width: 10px;
+        height: 9px;
+        background-position: 0px -402px;
+    }
+    &-close {
+        width: 8px;
+        height: 9px;
+        background-position: 0px -443px;
+    }
+    &-flash{
+        width: 26px;
+        height: 26px;
+        background-position: -62px 0;
+    }
+    &-top{
+        width: 26px;
+        height: 26px;
+        background-position: -110px 0;
+    }
+}
+
+.article-comments {
+    .title {}
+    .fa-user {
+        display: inline-block;
+        background: url(../img/sprites.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        background-position: 0px -324px;
+    }
+    .fa-thumbs-o-up {
+        display: inline-block;
+        background: url(../img/sprites.svg) no-repeat;
+        width: 12px;
+        height: 13px;
+        background-position: 0px -358px;
+    }
+    .fa-thumbs-up {
+        display: inline-block;
+        background: url(../img/sprites.svg) no-repeat;
+        width: 12px;
+        height: 13px;
+        background-position: -22px -358px;
+    }
+    .fa-comments-o {
+        display: inline-block;
+        background: url(../img/sprites.svg) no-repeat;
+        width: 14px;
+        height: 11px;
+        background-position: 0px -381px;
+    }
+}
