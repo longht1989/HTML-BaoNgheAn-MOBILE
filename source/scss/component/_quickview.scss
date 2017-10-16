@@ -1,1 +1,74 @@
 // Quick view menu
+.quickview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -9999;
+    // transition: all 0.1s linear;
+    &.is-active {
+        opacity: 1;
+        z-index: 1;
+    }
+    &-mask {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    &-wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 80%;
+        background: white;
+        z-index: 2;
+        overflow: auto;
+        padding: 16px;
+        transition: all 0.2s linear;
+        &.is-active {
+            left: 20%;
+        }
+    }
+    &__header {
+        font-family: $font-family-special;
+        margin-bottom: 12px;
+        color: $brand-primary;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__item {
+        border-radius: 5px;
+        background: #f0f0f0;
+        padding: 8px;
+        &+.quickview__item {
+            margin-top: 16px;
+        }
+    }
+    &__tag {
+        margin-bottom: 4px;
+        a {
+            font-size: 12px;
+            padding: 4px;
+            margin-bottom: 4px;
+            display: inline-block;
+            border-radius: 3px;
+            background: $brand-primary;
+            color: white;
+            transition: all 0.2s linear;
+            &:hover {
+                background: #999;
+                color: #eee;
+            }
+            &+a {
+                margin-left: 8px;
+            }
+        }
+    }
+}

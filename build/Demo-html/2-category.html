@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-    <title>Văn học quê nhà - Index</title>
+    <title>Báo Nghệ An - Category</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,236 +16,184 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../App_Themes/img/favicon.ico">
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../App_Themes/css/m-vanhoc.min.css">
+    <link rel="stylesheet" href="../App_Themes/css/m-bna.min.css">
     <!-- JS modernizr + Jquery + Components JS-->
-    <script src="../Jscripts/m-vanhoc.min.js"></script>
+    <script src="../Jscripts/m-bna.min.js"></script>
 </head>
 
 <body>
     <!-- mobile header -->
-    <header id="m-site-header">
-        <div class="container">
+    <header id="m-site-header" class="site-header">
+        <!-- header content -->
+        <div class="site-header__content">
             <h1 class="logo"><a href="1-index.html" title=""><img class="img-responsive" src="../app_themes/img/logo.png" alt=""></a></h1>
-            <span class="fa fa-navicon"></span>
+            <div class="site-header__tool">
+                <div class="site-header__search">
+                    <span class="sprites sprite-m-search"></span>
+                    <span class="sprites sprite-close"></span>
+                </div>
+                <div class="site-header__menu">
+                    <span class="sprites sprite-menu"></span>
+                    <span class="sprites sprite-close"></span>
+                </div>
+            </div>
+        </div>
+        <!-- header event -->
+        <div class="site-header__extend">
+            <ul>
+                <li>
+                    <a href="#">#Taxi</a>
+                </li>
+                <li>
+                    <a href="#">#VănNhưCương</a>
+                </li>
+                <li>
+                    <a href="#">#ÁpThấp</a>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- mobile menu -->
     <div class="mobile__menu">
-        <div class="container">
-            <div class="mobile__search">
-                <input type="text" class="form-control" placeholder="Tìm kiếm">
-                <span class="fa fa-search"></span>
-            </div>
-            <ul class="mobile__cate-listing">
-                <li><a href="2-category.html" title="Quân sự">Văn chương và dư luận</a></li>
-                <li><a href="2-category.html" title="Bài học cảnh giác">Chân dung</a></li>
-                <li><a href="2-category.html" title="Hình sự thế giới">Đối thoại</a></li>
-                <li><a href="2-category.html" title="Tin nóng giao thông">Văn xuôi</a></li>
-                <li><a href="2-category.html" title="Văn hóa - Giải trí bốn phương">Thơ</a></li>
-                <li><a href="2-category.html" title="Hồ sơ an ninh">Tin tức</a></li>
-            </ul>
+        <ul class="mobile__cate-listing">
+            <li><a href="2-category.html" title="Quân sự">Văn chương và dư luận</a></li>
+            <li><a href="2-category.html" title="Bài học cảnh giác">Chân dung</a></li>
+            <li><a href="2-category.html" title="Hình sự thế giới">Đối thoại</a></li>
+            <li><a href="2-category.html" title="Tin nóng giao thông">Văn xuôi</a></li>
+            <li><a href="2-category.html" title="Văn hóa - Giải trí bốn phương">Thơ</a></li>
+            <li><a href="2-category.html" title="Hồ sơ an ninh">Tin tức</a></li>
+        </ul>
+    </div>
+    <!-- mobile search -->
+    <div class="mobile__search">
+        <div class="search-wrap">
+            <input class="form-control" type="text" placeholder="Nội dung tìm kiếm">
+            <div class="search-btn"><span class="sprites sprite-m-search"></span></div>
         </div>
+    </div>
+    <!-- top ads -->
+    <div class="qc"><a href="/"><img class="" src="https://source.unsplash.com/random/320x50?sig=1" alt=""></a>
+        <p>Banner 320x50</p>
     </div>
     <!-- site content -->
     <div id="site-content" class="container">
         <!-- breadcrumnbs -->
-        <div class="breadcrumbs">
-            <h2 class="cate">
-                <a href="#">Đời sống văn học</a>
-            </h2>
-            <!-- <div class="subcate">
-                <a href="#" class="active">Thời sự</a>
-                <a href="#" class="">Đối ngoại</a>
-                <a href="#" class="">Nhân sự</a>
-            </div> -->
-        </div>
-        <!-- category highlight -->
-        <div class="category__highlight">
+        <ol class="breadcrumb">
+            <li><a href="2-category.html" class="breadcrumbs__cate">Thể thao</a></li>
+            <li class="active"><a href="2-category.html">Thể thao trong nước</a></li>
+        </ol>
+        <!-- zone highlight -->
+        <div class="zone zone--highlight">
             <article class="story story--highlight">
                 <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/800x450?sig=4" class="img-responsive" alt=""></a>
+                    <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/800x450?sig=1" alt=""></a>
                 </figure>
-                <div class="story__header">
-                    <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eius, optio.</a></h2>
-                    <div class="story__meta"><span class="fa fa-clock-o"></span>
-                        <time datetime="2011-01-12">January 12th, 2011</time>
-                    </div>
-                    <div class="story__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum illo excepturi, nulla nam cumque quasi.</div>
-                </div>
+                <h2 class="story__title"><a href="3-detail.html">Sự thật về chàng rể và tiểu thư của đại gia Ninh Bình</a></h2>
+                <div class="story__summary">(Tổ Quốc)- Nữ thi sĩ Xuân Quỳnh vừa chính thức được Chủ tịch nước ký Quyết định tặng giải thưởng Hồ Chí Minh về văn học nghệ ...</div>
             </article>
             <article class="story story--horizontal">
                 <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/120x90?sig=1" class="img-responsive" alt=""></a>
+                    <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=1" alt=""></a>
                 </figure>
-                <div class="story__header">
-                    <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, consequatur, laboriosam!</a></h2>
-                    <div class="story__meta"><span class="fa fa-clock-o"></span>
-                        <time datetime="2011-01-12">January 12th, 2011</time>
-                    </div>
-                </div>
+                <h2 class="story__title"><a href="3-detail.html">Tenebo labores liber pellat democrito, stabilique maius copulatas.</a></h2>
+                <div class="story__meta">8 bình luận</div>
             </article>
             <article class="story story--horizontal">
                 <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/120x90?sig=2" class="img-responsive" alt=""></a>
+                    <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=2" alt=""></a>
                 </figure>
-                <div class="story__header">
-                    <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, asperiores nobis.</a></h2>
-                    <div class="story__meta"><span class="fa fa-clock-o"></span>
-                        <time datetime="2011-01-12">January 12th, 2011</time>
-                    </div>
-                </div>
+                <h2 class="story__title"><a href="3-detail.html">Reiciat nulli emancipaverat inveneris nacti consecutionem exeduntur isti.</a></h2>
+                <div class="story__meta">8 bình luận</div>
             </article>
             <article class="story story--horizontal">
                 <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/120x90?sig=3" class="img-responsive" alt=""></a>
+                    <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=3" alt=""></a>
                 </figure>
-                <div class="story__header">
-                    <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique, voluptate?</a></h2>
-                    <div class="story__meta"><span class="fa fa-clock-o"></span>
-                        <time datetime="2011-01-12">January 12th, 2011</time>
-                    </div>
-                </div>
+                <h2 class="story__title"><a href="3-detail.html">Atqui fingitur sponte. Esset oratoribus occulte vester accusata.</a></h2>
+                <div class="story__meta">04 Jul 2017</div>
             </article>
         </div>
-        <!-- category listing  -->
-        <div class="category__listing">
-            <article class="story story--horizontal">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x60?sig=1" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, blanditiis, commodi.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x60?sig=2" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta neque, molestiae.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x60?sig=3" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorum tempore.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x60?sig=4" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quis, exercitationem!</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x60?sig=5" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore modi, et.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-        </div>
-        <!-- category listing  -->
-        <div class="category__listing has-portrait">
-            <article class="story story--horizontal story--portrait">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x105?sig=8" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, voluptatem, iure?</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal story--portrait">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x105?sig=9" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quas, ullam.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal story--portrait">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x105?sig=10" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, et eius!</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal story--portrait">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x105?sig=11" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, pariatur, iusto!</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-            <article class="story story--horizontal story--portrait">
-                <figure class="story__thumb">
-                    <a href="#"><img src="https://source.unsplash.com/random/80x105?sig=12" class="img-responsive" alt=""></a>
-                </figure>
-                <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, quasi, ratione.</a></h2>
-                <div class="story__meta">
-                    <span class="fa fa-clock-o"></span>
-                    <time datetime="2011-01-12">January 12th, 2011</time>
-                </div>
-            </article>
-        </div>
-        <!-- pagination -->
-        <ul class="pagination">
-            <li>
-                <a href="#" aria-label="Previous">
-                    <span class="fa fa-angle-left"></span>
-                </a>
-            </li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li>
-                <a href="#" aria-label="Next">
-                    <span class="fa fa-angle-right"></span>
-                </a>
-            </li>
-        </ul>
         <!-- ads -->
         <div class="qc">
             <a href="#"><img src="https://source.unsplash.com/random/300x250?sig=14" alt=""></a>
+            <p> banner 300x250</p>
         </div>
+        <!-- category listing -->
+        <section class="zone">
+            <div class="zone__content">
+                <div class="story-listing">
+                    <article class="story story--horizontal">
+                        <figure class="story__thumb">
+                            <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=4" alt=""></a>
+                        </figure>
+                        <h2 class="story__title"><a href="3-detail.html">Blanditiis adamare, voluntates reperiuntur debilitati intercapedo videtisne.</a></h2>
+                        <div class="story__meta">10 bình luận</div>
+                    </article>
+                    <article class="story story--horizontal">
+                        <figure class="story__thumb">
+                            <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=5" alt=""></a>
+                        </figure>
+                        <h2 class="story__title"><a href="3-detail.html">Quot uberiora, accuratius recte mediocritatem astris ferantur.</a></h2>
+                        <div class="story__meta">04 Jul 2017</div>
+                    </article>
+                    <article class="story story--horizontal">
+                        <figure class="story__thumb">
+                            <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=1" alt=""></a>
+                        </figure>
+                        <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h2>
+                        <div class="story__meta">10 bình luận</div>
+                    </article>
+                    <article class="story story--horizontal">
+                        <figure class="story__thumb">
+                            <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/80x60?sig=2" alt=""></a>
+                        </figure>
+                        <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h2>
+                        <div class="story__meta">04 Jul 2017</div>
+                    </article>
+                </div>
+                <div class="text-center view-more">
+                    <button class="btn btn-primary">Xem thêm ></button>
+                </div>
+            </div>
+        </section>
+        <!-- sub category -->
+        <!-- normal zone -->
+        <section class="zone">
+            <div class="zone__header">
+                <h3 class="zone__title"><a href="2-category.html">Thể thao trong nước</a></h3>
+            </div>
+            <div class="zone__content">
+                </article>
+                <article class="story">
+                    <figure class="story__thumb">
+                        <a href="3-detail.html"><img class="img-responsive" src="https://source.unsplash.com/random/768x432?sig=24" alt=""></a>
+                    </figure>
+                    <h2 class="story__title"><a href="3-detail.html">Summumque, queo contineri acutum. Accusata disputata tantalo.</a></h2>
+                    <div class="story__meta">10 bình luận</div>
+                </article>
+                <article class="story story--border">
+                    <h2 class="story__title"><a href="3-detail.html">Evolutio remotis omnibus albam. Graeci recusandae docui.</a></h2>
+                    <div class="story__meta">04 Jul 2017</div>
+                </article>
+                <article class="story story--border">
+                    <h2 class="story__title"><a href="3-detail.html">Necessariae honesto maxime arbitrium idem segnitiae adhaesiones.</a></h2>
+                    <div class="story__meta">04 Jul 2017</div>
+                </article>
+            </div>
+        </section>
     </div>
     <!-- site footer -->
-    <footer id="site-footer">
+    <footer class="site-footer" id="site-footer">
         <div class="container">
             <div class="footer__info">
-                <p>Bản quyền thuộc Báo điện tử Tổ Quốc - Bộ Văn hoá, Thể thao và Du lịch.</p>
-                <p>Chuyên trang Văn học Quê nhà - Báo Điện tử Tổ Quốc</p>
-                <p>All rights reserved</p>
-                <p>Địa chỉ: Số 20 ngõ 2 Hoa Lư - Vân Hồ - Hai Bà Trưng - Hà Nội</p>
-                <p>Điện thoại: <a href="tel:0439742813">84-04-3.9742813</a> - <a href="tel:0439742817">84-04-3.9742817</a></p>
-                <p>Email: <a href="mailto:vanhocquenha@toquoc.gov.vn">vanhocquenha@toquoc.gov.vn</a></p>
+                <p><b>Báo Nghệ An điện tử</b> - Cơ quan chủ quản: Tỉnh ủy Nghệ An</p>
+                <p>Giấy phép hoạt động báo điện tử số: 304/GP-BTTTT</p>
+                <p>Bộ Thông tin và Truyền thông cấp ngày 07-06-2016</p>
+                <p><b>Tổng biên tập:</b> Phạm Thị Hồng Toan</p>
+                <p><b>Địa chỉ:</b> Số 03 Đại lộ Lê Nin, Thành phố Vinh</p>
+                <p><b>Điện thoại:</b> (023)83.588138; <b>Fax:</b> (023)83.847898</p>
+                <p><b>QC:</b> (023)88 600006; <b>Email:</b> <a href="mailto:bna.pdt@gmail.com">bna.pdt@gmail.com</a></p>
+                <p><i>©Ghi rõ nguồn “Báo Nghệ An” khi phát hành lại thông tin từ website này</i></p>
             </div>
         </div>
     </footer>

@@ -2,12 +2,7 @@
 
 .btn {
     font-size: 14px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    @include transition(background-color, 0.2, ease-out);
+    @include transition(background-color, 0.2, linear);
     .fa {
         margin-right: 5px;
     }
@@ -42,3 +37,36 @@
     }
 }
 
+
+
+// site tool
+.site-tool {
+    position: fixed;
+    right: 16px;
+    bottom: 10%;
+    .sprites {
+        display: block;
+        margin-top: 4px;
+    }
+}
+
+.view-more {
+    font-size: 16px;
+    line-height: 2.1rem;
+    color: $brand-primary;
+    margin-top: 16px;
+    text-align: center;
+    .sprites {
+        vertical-align: text-bottom;
+        margin-right: 4px;
+    }
+    &-article {
+        color: #bfbfbf;
+        font-size: 12px;
+        .sprites {
+            margin-right: 0;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    }
+}

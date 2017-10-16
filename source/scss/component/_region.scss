@@ -25,6 +25,7 @@
         color: $brand-primary;
         text-transform: uppercase;
         float: left;
+        font-weight: bold;
         &:hover {
             color: $brand-success;
             &::after {
@@ -137,6 +138,10 @@
                 margin-top: 0;
             }
         }
+    }
+    .view-more {
+        margin-top: 16px;
+        text-align: center;
     }
 }
 

@@ -130,6 +130,10 @@
             }
         }
     }
+    &--border {
+        padding-top: 16px;
+        border-top: 1px solid #ddd;
+    }
     &--rare {
         background: white;
         padding: 0 10px 10px !important;
@@ -175,28 +179,5 @@
                 width: 100%;
             }
         }
-    }
-}
-
-
-
-
-
-
-/* poetic */
-
-.poetic {
-    &__title {
-        @include font-size(18, 22);
-        margin-bottom: 7px;
-        font-weight: bold;
-    }
-    &__author {
-        text-align: right;
-        font-style: italic;
-        margin-bottom: 7px;
-    }
-    &__content {
-        @include font-size(14, 25);
     }
 }
