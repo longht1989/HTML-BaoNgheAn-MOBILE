@@ -142,6 +142,19 @@
     .view-more {
         margin-top: 16px;
         text-align: center;
+    } // affix zone with pinned header
+    &--affix {
+        .zone__header.affix,
+        .zone__header.stuck {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            background: #f0f0f0;
+            z-index: 10;
+        }
     }
 }
 

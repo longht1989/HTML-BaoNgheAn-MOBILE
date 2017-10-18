@@ -34,3 +34,21 @@ $(function() {
         return false;
     });
 });
+
+$(window).scroll(function() {
+    $('.zone--affix').each(function() {
+        var curPos = $(window).scrollTop();
+        var zonePosTop = $(this).offset().top;
+        var zoneHeight = $(this).innerHeight();
+        var zonePosBot = zonePosTop + zoneHeight;
+        var zoneHeaderHeight = $(this).children('.zone__header').outerHeight();
+        var zoneContentHeight = $(this).children('.zone__content').height();
+        if (zonePosTop < curPos && curPos < (zonePosBot - 24)) {
+            $(this).children('.zone__header').addClass("affix");
+            $(this).children('.zone__content').css(("padding-top"), zoneHeaderHeight);
+        } else {
+            $(this).children('.zone__header').removeClass("affix");
+            $(this).children('.zone__content').css(("padding-top"), "0px");
+        }
+    });
+});
