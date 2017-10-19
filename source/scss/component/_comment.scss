@@ -3,14 +3,12 @@ li {
     list-style: none;
 }
 
-#modal-content >div>label {
+#modal-content>div>label {
     width: 50%;
     float: left
 }
 
-
-/* COMMENT */
-
+// COMMENT
 #comments {
     display: none;
 }
@@ -29,11 +27,31 @@ li {
     font-size: 14px;
 }
 
-.commentbox header h1 {
-    font-family: $font-family-itim;
-    @include font-size(24, 33);
-    color: $brand-primary;
+.commentbox header h1,
+.commentbox .title {
+    font-family: $font-family-special;
+    @include font-size(20, 26); // color: $brand-primary;
     margin-bottom: 7px;
+}
+
+.commentbox {
+    .input {
+        @include clearfix;
+        margin-bottom: 7px;
+        textarea {
+            @extend .form-control;
+            margin-bottom: 10px;
+            min-height: 4.2em;
+        }
+        .note {
+            @include font-size(12, 17);
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        &>.btnSubmit {
+            float: right;
+        }
+    }
 }
 
 .commentbox .form {
@@ -170,8 +188,8 @@ li {
     }
     font-weight: normal !important;
     color: #555 !important;
-    @include haf(){
-    	color: white !important;
+    @include haf() {
+        color: white !important;
     }
 }
 
@@ -185,7 +203,7 @@ li {
     text-transform: uppercase;
 }
 
-.commentbox .order > * {
+.commentbox .order>* {
     display: inline-block;
     margin-right: 5px;
     padding: 3px 10px 2px;
@@ -267,7 +285,7 @@ li {
     float: none;
 }
 
-.commentbox .comments li.noavatar > .meta:before {
+.commentbox .comments li.noavatar>.meta:before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -350,12 +368,69 @@ li {
 .commentbox .comments li .comment-actions a.btnReply {
     background: url(../images/icon_reply.png) no-repeat left 5px;
     background-size: 16px;
-    color: #000;
+    color: grey;
     display: none;
     white-space: nowrap;
 }
 
-.commentbox .comments > li:hover {
+.commentbox {
+    .comment {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        @include last-child-y;
+        .avatar {
+            float: left;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            // border: 1px solid #ccc;
+            display: inline-block;
+            text-align: center;
+            .fa {
+                font-size: 12px;
+                color: #ccc;
+            }
+        }
+        .content {
+            margin-left: 35px;
+            padding-top: 3px;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .comment-actions {
+            margin-top: 4px;
+            .btnLike {
+                margin-right: 12px;
+                color: grey;
+                font-weight: normal;
+                .fa {
+                    margin-right: 4px;
+                }
+            }
+            .btnReply {
+                color: black;
+                font-weight: normal;
+                .fa {
+                    margin-right: 4px;
+                }
+            }
+            .reply {
+                textarea {
+                    @extend .form-control;
+                    margin: 5px 0;
+                }
+            }
+        }
+        .sub-comments {
+            margin-left: 35px;
+            margin-top: 8px;
+        }
+    }
+}
+
+.commentbox .comments>li:hover {
     background: #fafafa;
 }
 
@@ -482,7 +557,7 @@ li {
     line-height: 1.4;
     text-transform: uppercase;
     padding: 6px 15px;
-    background: #A50A02;
+    background: $brand-primary;
     color: #fff
 }
 
@@ -581,8 +656,8 @@ li {
 
 #dialog .action button.btnSubmit,
 #dialog .action button:hover {
-    border-color: #0098D3;
-    color: #0098D3
+    border-color: $brand-primary;
+    color: $brand-primary
 }
 
 #dialog .action button.btnSubmit {

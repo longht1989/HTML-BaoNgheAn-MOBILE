@@ -499,10 +499,7 @@
         right: 0;
         top: 0;
     }
-    &__footer {
-        width: 607px;
-        float: left;
-    }
+    &__footer {}
     /* article author */
     &__author {
         text-align: right;
@@ -511,6 +508,7 @@
     /* article tag */
     &__tag {
         margin-top: 16px;
+        margin-bottom: 16px;
         .tag-label {
             font-size: 12px;
             display: inline-block;
@@ -587,6 +585,11 @@
         .article__title {
             font-size: 28px;
         }
+        .article__meta {
+            .social-listing {
+                float: none;
+            }
+        }
         .article__footer {
             width: 100%;
             float: none;
@@ -609,33 +612,18 @@
                 }
             }
         }
-        .article-comments {
-            @include clearfix;
-            .zone-content {
-                margin-left: -8px;
-                margin-right: -8px;
-            }
-            .box-input,
-            .box-user-comm {
-                width: 50%;
-                float: left;
-                padding: 0 8px;
-                margin-top: 0;
-            }
-            .box-user-comm {
-                max-height: 185px;
-                overflow: auto;
-            }
-        }
     }
 }
 
-/* comment zone */
-
+// comment zone
 .article-comments {
-    > header {
-        .fa {
-            margin-right: 10px;
+    >header {
+        font-family: $font-family-special;
+        margin-bottom: 12px;
+        color: $brand-primary;
+        h3 {
+            font-size: 18px;
+            line-height: 1.1em;
         }
     }
     .box-user-comm {
@@ -763,8 +751,7 @@
 .article-photo {
     .slide-show {
         position: relative;
-    }
-    // slider with caption
+    } // slider with caption
     .slider-caption {
         li {
             position: relative;
