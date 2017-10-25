@@ -457,14 +457,17 @@
     }
     /* old related */
     &__related {
-        margin-bottom: 17px;
+        margin: 16px 0;
+        width: 100% !important;
+        background: #F0F0F0;
         tr {}
         th {
             font-family: $font-family-special;
             color: $brand-primary;
-            padding-bottom: 8px;
+            padding: 8px 8px 4px;
         }
         td {
+            padding: 8px;
             li {
                 margin-bottom: 5px;
                 a {

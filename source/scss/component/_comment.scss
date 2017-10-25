@@ -541,15 +541,15 @@ li {
 }
 
 #dialog>div {
-    width: 600px;
+    width: 768px;
     max-width: 80%;
     position: fixed;
     top: 10%;
-    left: 40%;
-    margin: 0 0 0 -200px;
+    left: 10%;
+    margin: 0;
     background: #fff;
     overflow: hidden;
-    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .4)
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .4);
 }
 
 #dialog .header {
