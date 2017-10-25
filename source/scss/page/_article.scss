@@ -31,15 +31,6 @@
         line-height: 24px;
         @include clearfix;
         time {}
-        .social-listing {
-            float: right;
-            line-height: 1em;
-            .sprites {
-                &+.sprites {
-                    margin-left: 8px;
-                }
-            }
-        }
     }
     &__source {
         padding: 3px 4px;
@@ -92,12 +83,12 @@
         @include clearfix;
         margin-top: 16px;
         .content {
-            font-size: 14px;
-            line-height: 19px;
+            font-size: 16px;
+            line-height: 1.5em;
             @for $i from 1 through 5 {
                 h#{$i} {
-                    font-size: 14px;
-                    line-height: 19px;
+                    font-size: 16px;
+                    line-height: 1.5em;
                 }
             }
             p,
@@ -105,7 +96,7 @@
             h3,
             h4,
             h5 {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 margin-top: 0;
             }
             img {
@@ -189,9 +180,9 @@
             }
             .fig,
             .image_desc {
-                font-size: 14px;
+                font-size: 13px;
+                line-height: 1.4em;
                 color: #555;
-                font-style: italic;
                 text-align: center;
                 display: block;
             }
@@ -443,16 +434,13 @@
                 }
             }
         }
-        .social-share {
+        .social-listing {
+            line-height: 1em;
+            margin-bottom: 16px;
             text-align: right;
-            >a {
-                font-size: 20px;
-                display: inline-block;
-                margin-left: 5px;
-                vertical-align: bottom !important;
-                color: black;
-                &:hover {
-                    color: #555;
+            .sprites {
+                &+.sprites {
+                    margin-left: 8px;
                 }
             }
         }

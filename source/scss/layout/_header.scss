@@ -2,6 +2,7 @@
 
 .site-header {
     margin-bottom: 16px;
+    position: relative;
     &__content {
         padding: 8px;
         border-bottom: 1px solid #ddd;
@@ -13,18 +14,18 @@
     }
     &__tool {
         float: right;
-        margin-top: 4px;
+        margin-top: 2px;
     }
     &__search,
     &__menu {
         border-radius: 2px;
         background: #D9D8D8;
         float: left;
-        margin-left: 8px;
-        width: 24px;
-        height: 24px;
+        margin-left: 10px;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
         text-align: center;
-        line-height: 24px;
         transition: all 0.2s linear;
         &:hover {
             background: #d0d0d0;
@@ -68,16 +69,28 @@
     &__menu {
         display: none;
         background: #fff;
-        margin: -16px 0 16px;
         padding: 8px;
+        border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        @include has-shadow();
     }
     &__search {
         display: none;
         background: #fff;
-        margin: -16px 0 16px;
         padding: 8px;
+        border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        @include has-shadow();
         .search {
             &-wrap {
                 position: relative;

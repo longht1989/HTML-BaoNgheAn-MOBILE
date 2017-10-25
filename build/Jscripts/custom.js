@@ -6,14 +6,14 @@ $(function() {
     /*show mobile search*/
     $('.site-header__search').click(function() {
         $(this).toggleClass('is-active');
-        $(".mobile__search").slideToggle();
+        $(".mobile__search").slideToggle('fast');
         $('.site-header__menu').removeClass('is-active');
         $(".mobile__menu").slideUp('fast');
     });
     /*show mobile menu*/
     $('.site-header__menu').click(function() {
         $(this).toggleClass('is-active');
-        $(".mobile__menu").slideToggle();
+        $(".mobile__menu").slideToggle('fast');
         $('.site-header__search').removeClass('is-active');
         $(".mobile__search").slideUp('fast');
     });
@@ -21,10 +21,14 @@ $(function() {
     $('.sprite-flash').click(function() {
         $('.quickview').addClass('is-active');
         $('.quickview-wrap').addClass('is-active');
+        // disable scrolling body
+        $('body').addClass('stop-scrolling');
     });
     $('.quickview-mask').click(function() {
         $('.quickview-wrap').removeClass('is-active');
         $('.quickview').removeClass('is-active');
+        // enable scrolling body
+        $('body').removeClass('stop-scrolling');
     });
     // define story with gif thumbnail
     $('.story__thumb img[src$=".gif"]').parents('.story').addClass('story--gif');

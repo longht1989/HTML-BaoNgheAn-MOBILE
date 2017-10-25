@@ -32,12 +32,13 @@
     // -ms-border-radius: 0px;
     // -o-border-radius: 0px;
     // border-radius: 0px;
+    // box-shadow: none;
+    // outline: none;
+    -webkit-appearance: none;
     &:focus {
         border-color: darken($brand-primary, 15%);
     }
 }
-
-
 
 // site tool
 .site-tool {
