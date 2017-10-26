@@ -38,6 +38,7 @@ gulp.task('scripts', function() {
             paths.js_dev + '/vendor/modernizr.js',
             paths.js_dev + '/vendor/jquery.min.js',
             paths.js_dev + '/vendor/jquery-migrate.js',
+            paths.js_dev + '/vendor/jquery.mobile.custom.min.js', // mobile touch swipe
             paths.js_dev + '/vendor/bootstrap.min.js'
             // paths.js_dev + '/vendor/jquery.matchHeight-min.js',
             // paths.js_dev + '/vendor/jquery.bxslider.js',

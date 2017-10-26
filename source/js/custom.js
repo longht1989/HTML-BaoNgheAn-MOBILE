@@ -1,6 +1,13 @@
 /* ====================================
    Onload functions
    ==================================== */
+/*Function close quickview*/
+function close() {
+    $('.quickview-wrap').removeClass('is-active');
+    $('.quickview').removeClass('is-active');
+    // enable scrolling body
+    $('body').removeClass('stop-scrolling');
+}
 
 $(function() {
     /*show mobile search*/
@@ -25,11 +32,14 @@ $(function() {
         $('body').addClass('stop-scrolling');
     });
     $('.quickview-mask').click(function() {
-        $('.quickview-wrap').removeClass('is-active');
-        $('.quickview').removeClass('is-active');
-        // enable scrolling body
-        $('body').removeClass('stop-scrolling');
+        close();
     });
+    // close quickview with swipe right
+    $(".quickview").on("swiperight", closequickview);
+    // Callback function references the event target
+    function closequickview(event) {
+        close();
+    }
     // define story with gif thumbnail
     $('.story__thumb img[src$=".gif"]').parents('.story').addClass('story--gif');
     // scroll to top 
@@ -38,6 +48,7 @@ $(function() {
         return false;
     });
 });
+
 
 $(window).scroll(function() {
     $('.zone--affix').each(function() {
