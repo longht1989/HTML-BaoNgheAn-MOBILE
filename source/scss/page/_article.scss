@@ -187,6 +187,88 @@
                 display: block;
             }
         }
+        /* box-image */
+        .box-image {
+            @include clearfix;
+            margin-left: -4px;
+            margin-right: -4px;
+            &.box-dou {
+                .box-col {
+                    width: 50%;
+                }
+            }
+            &.box-trip {
+                .box-col {
+                    width: 33.33%;
+                }
+            }
+            &.box-trip-sm {
+                .box-col {
+                    width: 50%;
+                    margin-bottom: 8px;
+                }
+                .box-col-lg {
+                    width: 100%;
+                    float: none;
+                    clear: both;
+                }
+            }
+            &.box-quad {
+                .box-col {
+                    width: 50%;
+                    margin-bottom: 8px;
+                }
+            }
+            &.box-16-9 {
+                .item-image {
+                    padding-bottom: 56.25%;
+                }
+            }
+            &.box-4-3 {
+                .item-image {
+                    padding-bottom: 75%;
+                }
+            }
+            &.box-3-4 {
+                .item-image {
+                    padding-bottom: 133%;
+                }
+            }
+            .box-col {
+                float: left;
+                padding: 0 4px;
+                margin-bottom: 0;
+            }
+            .box-desc{
+                clear: both;
+                padding: 8px 4px 0;
+                text-align: center;
+                font-style: italic;
+            }
+            .item-image {
+                position: relative;
+                padding-bottom: 56.25%;
+                overflow: hidden;
+                margin-bottom: 0;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        /* -------------- */
+        .box-collapse {
+            &-hdr {
+                a {
+                    display: block;
+                    height: 66px;
+                    background: url(../img/lawyer.jpg) left top no-repeat transparent;
+                }
+            }
+        }
         /* -------------- */
         .aside-img {
             margin-bottom: 15px;

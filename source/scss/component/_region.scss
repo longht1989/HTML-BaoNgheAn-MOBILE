@@ -10,7 +10,7 @@
     &__header {
         @include clearfix;
         margin-bottom: 12px;
-        font-family: $font-family-special;
+        // font-family: $font-family-special;
         font-size: 0;
         .form-control {
             width: 140px;
