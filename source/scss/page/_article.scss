@@ -239,7 +239,7 @@
                 padding: 0 4px;
                 margin-bottom: 0;
             }
-            .box-desc{
+            .box-desc {
                 clear: both;
                 padding: 8px 4px 0;
                 text-align: center;
@@ -256,6 +256,28 @@
                     left: 0;
                     width: 100%;
                     height: auto;
+                }
+            }
+            &-portrait {
+                width: 33.33%;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                &.pull-right {
+                    margin-left: 10px;
+                }
+                &.pull-left {
+                    margin-right: 10px;
+                }
+                .item-image {
+                    margin-bottom: 0;
+                }
+                .box-desc {
+                    padding: 4px;
+                    margin-bottom: 0;
+                    text-align: center;
+                    background: #f0f0f0;
                 }
             }
         }
