@@ -47,10 +47,12 @@
             }
         }
     }
+    .sprite-magazine {
+        float: left;
+    }
     &__extend {
         padding: 0 8px;
-        background: #F7F7F7;
-        // font-family: $font-family-special;
+        background: #F7F7F7; // font-family: $font-family-special;
         font-size: 14px;
         line-height: 3.5rem;
         max-height: 35px;
