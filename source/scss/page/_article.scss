@@ -429,6 +429,86 @@
             margin-left: 20px;
             width: 50%;
         }
+        .cms-quote {
+            margin: 0 0 10px;
+            padding: 10px 10px 10px 40px;
+            background: #eee;
+            border-left: 3px solid $brand-primary;
+            position: relative;
+            font-family: Georgia, 'Times New Roman', serif;
+            clear: both;
+            @include clearfix;
+            >p,
+            >div {
+                margin-bottom: 0;
+                &~p,
+                &~div {
+                    margin-top: 10px;
+                }
+            }
+            .author {
+                font-style: italic;
+                font-size: 14px;
+                line-height: 1.4em;
+                display: block;
+                margin: 10px 0 0;
+                padding: 0 60px;
+                position: relative;
+                text-align: center;
+                font-family: $font-family-sans-serif;
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: $brand-primary;
+                    width: 60px;
+                    height: 1px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    background-color: $brand-primary;
+                    width: 60px;
+                    height: 1px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+                &>span {
+                    display: inline-block;
+                    background: inherit;
+                }
+            }
+            .sprite-quote {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
+        .cms-quote.pull-left {
+            margin-right: 20px;
+            width: 50%;
+            .author {
+                padding: 0 15px;
+                &::before,
+                &::after {
+                    width: 15px;
+                }
+            }
+        }
+        .cms-quote.pull-right {
+            margin-left: 20px;
+            width: 50%;
+            .author {
+                padding: 0 15px;
+                &::before,
+                &::after {
+                    width: 15px;
+                }
+            }
+        }
         /* -------------- */
         .article-poll {
             margin-bottom: 20px;
