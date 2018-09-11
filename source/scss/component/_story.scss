@@ -202,4 +202,21 @@
             }
         }
     }
+    .suyngam & {
+        margin-bottom: 0;
+        .story {
+            &__thumb {
+                float: right;
+                margin-left: 10px;
+                width: 33.33%;
+            }
+        }
+    }
+    .tieudiem & {
+        .story {
+            &__title {
+                font-style: italic;
+            }
+        }
+    }
 }

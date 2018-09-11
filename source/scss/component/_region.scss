@@ -9,8 +9,7 @@
     margin-bottom: 24px;
     &__header {
         @include clearfix;
-        margin-bottom: 12px;
-        // font-family: $font-family-special;
+        margin-bottom: 12px; // font-family: $font-family-special;
         font-size: 0;
         .form-control {
             width: 140px;
@@ -154,6 +153,40 @@
             border-bottom: 1px solid #ddd;
             background: #f0f0f0;
             z-index: 10;
+        }
+    }
+    &.suyngam {
+        .zone__header {
+            img {
+                max-height: 60px;
+                width: auto;
+            }
+        }
+    }
+    &.tieudiem {
+        background: url(../img/tieudiem__bg.png) left top no-repeat #F0F0F0;
+        background-size: 100%;
+        .zone__title {
+            float: none;
+            img {
+                height: 40px;
+                width: auto;
+            }
+        }
+        .zone__title--sub {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: bold;
+            margin-top: 5px;
+            a {
+                color: $brand-primary;
+            }
+        }
+        .zone__content {
+            padding-left: 60px;
+            min-height: 60px;
+            background: url(../img/tieudiem__symbol.png) left 10px top no-repeat #F0F0F0;
+            background-size: 30px 60px;
         }
     }
 }

@@ -7,8 +7,7 @@
     margin-bottom: 16px;
     list-style: none;
     background-color: $breadcrumb-bg;
-    border-radius: $border-radius-base;
-    // font-family: $font-family-special;
+    border-radius: $border-radius-base; // font-family: $font-family-special;
     >li {
         text-transform: normal;
         display: inline-block;
@@ -25,9 +24,22 @@
     }
     >.active {
         color: $brand-primary;
-        font-weight: bold;
+        // font-weight: bold;
         a {
             color: $brand-primary;
         }
+    }
+    .active {
+        a {
+            color: $brand-primary;
+        }
+    }
+}
+
+.breadcrumbs {
+    &__cate {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $brand-primary;
     }
 }
